@@ -11,19 +11,21 @@
   <header>
     <h1>War Simulator</h1>
   </header>
+  <h5>Player 1</h5>
   <div class="container-fluid">
+    <h5>Base Stats</h5>
     <div class="row">
       <div class="col-lg-2">
-        <label for="unitBonus">Unit Bonus</label>
+        <label for="unitBonus1">Unit Bonus</label>
         <form>
-          <input type="text" id="unitBonus" name="unitBonus"><br><br>
+          <input type="text" id="unitBonus1" name="unitBonus1"><br><br>
         </form> 
-        <button id="randomUnitBonus">Roll</button>
+        <button id="randomUnitBonus1">Roll</button>
       </div>
 
       <div class="col-lg-2">
-        <label for="unitType">Unit Type:</label>
-        <select name="unitType" id="unitType">
+        <label for="unitType1">Unit Type:</label>
+        <select name="unitType1" id="unitType1">
           <option value="2.0">Special Forces</option>
           <option value="1.5">Active Military</option>
           <option value="1.0">National Guard</option>
@@ -32,48 +34,312 @@
       </div>
 
       <div class="col-lg-2">
-        <label for="startingMen">Starting # of Men</label>
+        <label for="startingMen1">Starting # of Men</label>
         <form>
-          <input type="text" id="startingMen" name="startingMen">
+          <input type="text" id="startingMen1" name="startingMen1">
           <br><br>
         </form> 
       </div>
 
       <div class="col-lg-2">
-        <label for="remainingMen"># of men Remaining</label>
+        <label for="remainingMen1"># of men Remaining</label>
         <form>
-          <input type="text" id="remainingMen" name="remainingMen">
+          <input type="text" id="remainingMen1" name="remainingMen1">
           <br><br>
         </form> 
       </div>
 
       <div class="col-lg-2">
-        <label for="ifvNum">IFV</label>
+        <label for="ifv1">IFV</label>
+        <select name="ifv1" id="ifv1">
+          <option value="1">None</option>
+          <option value="1.5">Trainer Jets Aero L-39 (1972)</option>
+          <option value="1.5">Robinson R44 light helicopters (unarmed) (1990)</option>
+          <option value="1.5">M28 Skytruck (1993)</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="ifvNum1"># of IFV</label>
         <form>
-          <input type="text" id="ifvNum" name="ifvNum">
+          <input type="text" id="ifvNum1" name="ifvNum1">
           <br><br>
         </form> 
       </div>
 
       <div class="col-lg-2">
-        <label for="tankNum">Tanks</label>
-        <form>
-          <input type="text" id="tankNum" name="tankNum">
-          <br><br>
-        </form> 
+        <label for="tank1">Tanks</label>
+        <select name="tank1" id="tank1">
+          <option value="1">None</option>
+          <option value="1.5">Trainer Jets Aero L-39 (1972)</option>
+          <option value="1.5">Robinson R44 light helicopters (unarmed) (1990)</option>
+          <option value="1.5">M28 Skytruck (1993)</option>
+        </select> 
       </div>
 
       <div class="col-lg-2">
-        <label for="combatResult">Final Combat Roll</label>
+        <label for="tankNum1"># of Tanks</label>
         <form>
-          <output type="text" id="combatResult" name="combatResult">
+          <input type="text" id="tankNum1" name="tankNum1">
           <br><br>
-          <button id="submitVals">Run</button>
         </form> 
       </div>
 
     </div>
+
+    <h5>Modifiers</h5>
+    <div class="row">
+
+      <div class="col-lg-2">
+        <label for="defenderTerrain1">Terrain of the Defender</label>
+        <select name="defenderTerrain1" id="defenderTerrain1">
+          <option value="1">Defending</option>
+          <option value="1">Open</option>
+          <option value="0.80">Forest</option>
+          <option value="0.65">Mountain</option>
+          <option value="0.80">City</option>
+          <option value="0.40">Castle</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="defenderEntrenched1">Entrenched level of the Defender</label>
+        <select name="defenderEntrenched1" id="defenderEntrenched1">
+          <option value="1">Defending</option>
+          <option value="0.85">Level 1</option>
+          <option value="0.75">Level 2</option>
+          <option value="0.65">Level 3</option>
+          <option value="0.50">Level 4</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="airSupport1">Air Support</label>
+        <select name="airSupport1" id="airSupport1">
+          <option value="1">None</option>
+          <option value="1.5">Trainer Jets Aero L-39 (1972)</option>
+          <option value="1.5">Robinson R44 light helicopters (unarmed) (1990)</option>
+          <option value="1.5">M28 Skytruck (1993)</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="airSupportNum1"># of AirSupport</label>
+        <form>
+          <input type="text" id="airSupportNum1" name="airSupportNum1">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="mortarSupport1">Mortar Support</label>
+        <select name="mortarSupport1" id="mortarSupport1">
+          <option value="1">m252 81mm </option>
+          <option value="2">m/41D 120mm</option>
+          <option value="3">120-PM-43 120mm Mortar 6km range</option>
+          <option value="4">82mm Mortar 6km Range</option>
+          <option value="5">60mm Mortar 4km Range</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="mortarSupportNum1"># of Mortar Support</label>
+        <form>
+          <input type="text" id="mortarSupportNum1" name="mortarSupportNum1">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="artillerySupport1">Artillery Support</label>
+        <select name="artillerySupport1" id="artillerySupport1">
+          <option value="1">100mm vz. 53 Field Gun</option>
+          <option value="2">H63 122 mm (D-30)</option>
+          <option value="3">24x FH-70 155mm</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="artillerySupportNum1"># of AirSupport</label>
+        <form>
+          <input type="text" id="artillerySupportNum1" name="artillerySupportNum1">
+          <br><br>
+        </form> 
+      </div>
+    </div>
+    
   </div>
+
+  <!-- PLAYER 2 -->
+
+  <h5>Player 2</h5>
+  <div class="container-fluid">
+    <h5>Base Stats</h5>
+    <div class="row">
+      <div class="col-lg-2">
+        <label for="unitBonus2">Unit Bonus</label>
+        <form>
+          <input type="text" id="unitBonus2" name="unitBonus2"><br><br>
+        </form> 
+        <button id="randomUnitBonus2">Roll</button>
+      </div>
+
+      <div class="col-lg-2">
+        <label for="unitType2">Unit Type:</label>
+        <select name="unitType2" id="unitType2">
+          <option value="2.0">Special Forces</option>
+          <option value="1.5">Active Military</option>
+          <option value="1.0">National Guard</option>
+          <option value="0.5">Paratroopers</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="startingMen2">Starting # of Men</label>
+        <form>
+          <input type="text" id="startingMen2" name="startingMen2">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="remainingMen2"># of men Remaining</label>
+        <form>
+          <input type="text" id="remainingMen2" name="remainingMen2">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="ifv2">IFV</label>
+        <select name="ifv2" id="ifv2">
+          <option value="1">None</option>
+          <option value="1.5">Trainer Jets Aero L-39 (1972)</option>
+          <option value="1.5">Robinson R44 light helicopters (unarmed) (1990)</option>
+          <option value="1.5">M28 Skytruck (1993)</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="ifvNum2"># of IFV</label>
+        <form>
+          <input type="text" id="ifvNum2" name="ifvNum2">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="tank2">Tanks</label>
+        <select name="tank2" id="tank2">
+          <option value="1">None</option>
+          <option value="1.5">Trainer Jets Aero L-39 (1972)</option>
+          <option value="1.5">Robinson R44 light helicopters (unarmed) (1990)</option>
+          <option value="1.5">M28 Skytruck (1993)</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="tankNum2"># of Tanks</label>
+        <form>
+          <input type="text" id="tankNum2" name="tankNum2">
+          <br><br>
+        </form> 
+      </div>
+
+    </div>
+
+    <h5>Modifiers</h5>
+    <div class="row">
+
+      <div class="col-lg-2">
+        <label for="defenderTerrain2">Terrain of the Defender</label>
+        <select name="defenderTerrain2" id="defenderTerrain2">
+          <option value="1">Defending</option>
+          <option value="1">Open</option>
+          <option value="0.80">Forest</option>
+          <option value="0.65">Mountain</option>
+          <option value="0.80">City</option>
+          <option value="0.40">Castle</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="defenderEntrenched2">Entrenched level of the Defender</label>
+        <select name="defenderEntrenched2" id="defenderEntrenched2">
+          <option value="1">Defending</option>
+          <option value="0.85">Level 1</option>
+          <option value="0.75">Level 2</option>
+          <option value="0.65">Level 3</option>
+          <option value="0.50">Level 4</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="airSupport2">Air Support</label>
+        <select name="airSupport2" id="airSupport2">
+          <option value="1">None</option>
+          <option value="1.5">Trainer Jets Aero L-39 (1972)</option>
+          <option value="1.5">Robinson R44 light helicopters (unarmed) (1990)</option>
+          <option value="1.5">M28 Skytruck (1993)</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="airSupportNum2"># of AirSupport</label>
+        <form>
+          <input type="text" id="airSupportNum2" name="airSupportNum2">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="mortarSupport2">Mortar Support</label>
+        <select name="mortarSupport2" id="mortarSupport2">
+          <option value="1">m252 81mm </option>
+          <option value="2">m/41D 120mm</option>
+          <option value="3">120-PM-43 120mm Mortar 6km range</option>
+          <option value="4">82mm Mortar 6km Range</option>
+          <option value="5">60mm Mortar 4km Range</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="mortarSupportNum2"># of Mortar Support</label>
+        <form>
+          <input type="text" id="mortarSupportNum2" name="mortarSupportNum2">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="artillerySupport2">Artillery Support</label>
+        <select name="artillerySupport2" id="artillerySupport2">
+          <option value="1">100mm vz. 53 Field Gun</option>
+          <option value="2">H63 122 mm (D-30)</option>
+          <option value="3">24x FH-70 155mm</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="artillerySupportNum2"># of AirSupport</label>
+        <form>
+          <input type="text" id="artillerySupportNum2" name="artillerySupportNum2">
+          <br><br>
+        </form> 
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <label for="combatResult">Final Combat Roll</label>
+      <form>
+        <output type="text" id="combatResult" name="combatResult">
+        <button id="submitVals">Run</button>
+        <br><br>
+      </form> 
+    </div>
+    
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
