@@ -14,33 +14,66 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2">
-        <label for="lname">Unit Bonus</label>
+        <label for="unitBonus">Unit Bonus</label>
         <form>
-          <input type="text" id="lname" name="lname"><br><br>
+          <input type="text" id="unitBonus" name="unitBonus"><br><br>
+        </form> 
+        <button id="randomUnitBonus">Roll</button>
+      </div>
+
+      <div class="col-lg-2">
+        <label for="unitType">Unit Type:</label>
+        <select name="unitType" id="unitType">
+          <option value="2.0">Special Forces</option>
+          <option value="1.5">Active Military</option>
+          <option value="1.0">National Guard</option>
+          <option value="0.5">Paratroopers</option>
+        </select> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="startingMen">Starting # of Men</label>
+        <form>
+          <input type="text" id="startingMen" name="startingMen">
+          <br><br>
         </form> 
       </div>
-      <div class="col-lg-1">
-        <label for="cars">Unit Type:</label>
 
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select> 
+      <div class="col-lg-2">
+        <label for="remainingMen"># of men Remaining</label>
+        <form>
+          <input type="text" id="remainingMen" name="remainingMen">
+          <br><br>
+        </form> 
       </div>
-      <div class="col-lg-1">
-        <label for="cars">Choose a car:</label>
 
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select> 
+      <div class="col-lg-2">
+        <label for="ifvNum">IFV</label>
+        <form>
+          <input type="text" id="ifvNum" name="ifvNum">
+          <br><br>
+        </form> 
       </div>
+
+      <div class="col-lg-2">
+        <label for="tankNum">Tanks</label>
+        <form>
+          <input type="text" id="tankNum" name="tankNum">
+          <br><br>
+        </form> 
+      </div>
+
+      <div class="col-lg-2">
+        <label for="combatResult">Final Combat Roll</label>
+        <form>
+          <output type="text" id="combatResult" name="combatResult">
+          <br><br>
+          <button id="submitVals">Run</button>
+        </form> 
+      </div>
+
     </div>
   </div>
-  
+  <script src="script.js"></script>
 </body>
 </html>
