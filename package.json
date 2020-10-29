@@ -1,0 +1,23 @@
+{
+  "name": "warsim",
+  "version": "1.0.0",
+  "description": "Simple application for entering data for a war simulator",
+  "main": "script copy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AeroAtlas/Warsim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AeroAtlas/Warsim/issues"
+  },
+  "homepage": "https://github.com/AeroAtlas/Warsim#readme",
+  "dependencies": {
+    "electron": "^10.1.3"
+  }
+}
